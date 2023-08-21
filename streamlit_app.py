@@ -47,4 +47,4 @@ streamlit.dataframe(my_data_rows)
 add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
 streamlit.write('Thank for adding ', add_my_fruit)
 
-my_cur.execute("inset into fruit_load_list values (["snowflake"])")
+my_cur.execute("inset into fruit_load_list values (my_cnx)")
